@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useEffect, useState } from "react";
 
 // ─── UNSPLASH FREE IMAGES ────────────────────────────────────────────────────
 const IMGS = {
@@ -413,7 +413,7 @@ function ParticleField() {
       alpha: Math.random() * 0.5 + 0.1,
       green: Math.random() > 0.65,
     }));
-    let frame = 0;
+    
     const animate = () => {
       ctx.clearRect(0, 0, c.width, c.height);
       particles.forEach((p) => {
