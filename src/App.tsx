@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 
 // ─── UNSPLASH FREE IMAGES ────────────────────────────────────────────────────
 const IMGS = {
